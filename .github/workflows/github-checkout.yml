@@ -6,6 +6,8 @@ jobs:
 
         steps:
         - uses: actions/checkout@v4
+        # actions/checkout 은 github actions에서 레포지토리를 CI/CD 환경으로 가져오는 역할을 함
+        # github repo의 코드를 runner(빌드 서버)에 다운로드하는 액션임
         - name: Run pwd
           run: pwd
         - name: Run ls -al
